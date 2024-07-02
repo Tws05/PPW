@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="" onclick="alert('Mohon Login Terlebih Dahulu 😊');">NONTON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="alert('Mohon Login Terlebih Dahulu 😊');">FAQ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Action</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Romance</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Family</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Horror</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Comedy</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Religi</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Sport</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Drama</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit" onclick="alert('Mohon Login Terlebih Dahulu 😊');">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form name="login" onsubmit="return Login()">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" name="username" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small class="text-muted">Don't have an account? <a href="register.html">Register</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function Login() {
+            var username = document.login.username.value.toLowerCase();
+            var password = document.login.password.value.toLowerCase();
+
+            if (username == "test@gmail.com" && password == "1") {
+                alert("Selamat, Anda berhasil login!");
+                window.location.replace("index.html");
+                return false;
+            } else {
+                alert('Email atau Password anda salah');
+                return;
+            }
+        }
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>About Us</h5>
+                <p>Welcome to NONTON, your ultimate destination for online streaming. 
+                    At NONTON, we believe in bringing the magic of cinema and the excitement 
+                    of television right to your fingertips. Our platform offers a vast library 
+                    of movies, TV shows, documentaries, and exclusive content that you can enjoy anytime, anywhere.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="faq.html" class="text-white">FAQ</a></li>
+                    <li><a href="service.html" class="text-white">Series</a></li>
+                    <li><a href="Contact Us.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>
+                    Address: Sleman, Yogyakarta, Indonesia, 55281<br>
+                    Phone: (+62) 800000000<br>
+                    Email: sisteminformasi@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-0">&copy; 2024 NONTON. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
